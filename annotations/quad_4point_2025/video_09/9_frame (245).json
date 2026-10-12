@@ -1,0 +1,36 @@
+{
+  "version": "5.5.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Panel",
+      "points": [
+        [
+          565.0420168067226,
+          145.46218487394958
+        ],
+        [
+          565.0420168067226,
+          942.1008403361345
+        ],
+        [
+          1344.873949579832,
+          942.1008403361345
+        ],
+        [
+          1344.873949579832,
+          145.46218487394958
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "../../../data/images/video_09/9_frame (245).jpg",
+  "imageData": null,
+  "imageHeight": 1080,
+  "imageWidth": 1920
+}
