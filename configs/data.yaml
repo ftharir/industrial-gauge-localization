@@ -1,0 +1,7 @@
+# Dataset description for ultralytics (the file notebook cell 27 expects at ./dataset/data.yaml).
+# Copy it next to the dataset/ folder that src/data_preparation/create_train_val_split.py creates.
+path: ./dataset
+train: images/train
+val: images/val
+names:
+  0: gauge
