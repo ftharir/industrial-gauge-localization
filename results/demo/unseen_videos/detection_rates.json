@@ -1,0 +1,23 @@
+{
+ "pressure_gauge_reader": {
+  "duration_s": 20.1,
+  "frames_checked_every_2nd": 302,
+  "frames_with_detection": 80,
+  "detection_rate": 0.265,
+  "mean_confidence_when_detected": 0.634
+ },
+ "handheld13": {
+  "duration_s": 59.7,
+  "frames_checked_every_2nd": 895,
+  "frames_with_detection": 895,
+  "detection_rate": 1.0,
+  "mean_confidence_when_detected": 0.899
+ },
+ "handheld8": {
+  "duration_s": 41.4,
+  "frames_checked_every_2nd": 620,
+  "frames_with_detection": 620,
+  "detection_rate": 1.0,
+  "mean_confidence_when_detected": 0.902
+ }
+}
