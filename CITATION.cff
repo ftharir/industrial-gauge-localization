@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this data set or code, please cite it as below."
+message: "If you use this dataset or code, please cite it as below."
 title: "Industrial Gauge Localization: labelled frames and YOLOv5 baseline"
 type: software
 authors:

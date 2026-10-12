@@ -3,7 +3,7 @@
 <h1 align="center">Industrial Gauge Localization</h1>
 
 <p align="center">
-Finding an analog pressure gauge in video frames with YOLOv5 - a hand-annotated data set,<br>
+Finding an analog pressure gauge in video frames with YOLOv5 - a hand-annotated dataset,<br>
 the training pipeline and the first stage of automatic gauge reading.
 </p>
 
@@ -70,7 +70,7 @@ The detector was also run on three recordings that were **not used for annotatio
 
 The two steady recordings are detected in every frame. In the third video the gauge is found while it is sharp and in view (first seconds); it is missed when the camera moves fast and the image blurs or the gauge leaves the frame.
 
-## The data set
+## The dataset
 
 * **435 frames** taken from three recordings (a far view among pipes, a hand-held close-up and a fixed view of a second gauge), 1920x1080, in [`data/images`](data/images). YOLO labels (one box per frame, class `0 = gauge`) are in [`data/labels`](data/labels).
 * **435 augmented frames** in [`data/augmented`](data/augmented).

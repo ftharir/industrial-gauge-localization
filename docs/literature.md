@@ -3,7 +3,7 @@
 Papers read for this project on reading needle-type instruments with computer vision. The author's own summaries (in Persian) are in `literature_notes/`; the papers themselves are not redistributed.
 
 1. A Survey of Prominent Image Processing Research on Needle-type Instrument Reading on Aircraft
-2. An Image Processing-Based Approach for Reading Needle-Type Instruments (aircraft instrument data set from a flight simulator)
+2. An Image Processing-Based Approach for Reading Needle-Type Instruments (aircraft instrument dataset from a flight simulator)
 3. Automated Aircraft Instrument Reading Using Real-Time Video Analysis
 4. Computer Vision-Based Approach for Reading Analog Multimeter
 5. Image Processing for Data Acquisition and Machine Learning of Helicopter Flight Dynamics

@@ -4,8 +4,8 @@ Checks made on the labelled frames before training.
 
 ## 1. The original train/val folders overlapped
 
-The first data set (`dataset/images/train|val`) contained 412 training and 151 validation images, but only **435 distinct frames**.
-**128 of the 151 validation frames (85 %) were also in the training folder**, so the validation scores of that data set were measured mostly on frames the model had trained on.
+The first dataset (`dataset/images/train|val`) contained 412 training and 151 validation images, but only **435 distinct frames**.
+**128 of the 151 validation frames (85 %) were also in the training folder**, so the validation scores of that dataset were measured mostly on frames the model had trained on.
 The most likely cause is that `create_train_val_split.py` was run more than once into the same output folder (every run adds a new random split), which is easy to do.
 
 Consequence: this repository does not use that folder. The training run uses a fresh split made once with `create_train_val_split.py`: 348 training and 87 validation frames, no frame in both.
