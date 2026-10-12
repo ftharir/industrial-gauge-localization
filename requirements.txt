@@ -1,0 +1,11 @@
+# versions used for the reported results (Python 3.12, CUDA 12.1)
+torch==2.5.1
+torchvision==0.20.1
+ultralytics==8.2.85
+opencv-python==4.10.0.84
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.9.2
+pillow==10.4.0
+labelme==5.5.0
+python-dotenv==1.1.0
