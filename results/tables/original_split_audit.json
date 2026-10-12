@@ -1,0 +1,6 @@
+{
+ "train": 412,
+ "val": 151,
+ "val_frames_also_in_train": 128,
+ "unique_frames": 435
+}
