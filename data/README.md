@@ -6,6 +6,7 @@ Everything here comes from three recordings of an analog pressure gauge (1920x10
 |---|---|
 | `images/video_XX/` | 435 labelled frames taken from the recordings (JPEG, 1920x1080). |
 | `labels/video_XX/` | YOLO labels (generated from annotation pass 1), one `.txt` per frame: `0 x_center y_center width height` (normalised). One class, `0 = gauge`. |
+| `augmented/images/video_XX/` | One augmented copy of every frame (rotation, flip, brightness, noise), made with [`src/augmentation/augment_images.py`](../src/augmentation/augment_images.py). Its annotations are in `../annotations/labelme_augmented_2025`. |
 | `../annotations/` | The LabelMe annotations the author drew by hand (two passes and a four-point version), documented in [`../annotations/README.md`](../annotations/README.md). |
 | `frames.csv` | Frame -> video -> source recording. |
 

@@ -9,3 +9,4 @@ matplotlib==3.9.2
 pillow==10.4.0
 labelme==5.5.0
 python-dotenv==1.1.0
+albumentations==2.0.5

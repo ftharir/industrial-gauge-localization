@@ -9,6 +9,7 @@ The folders the scripts read and write are **not hard-coded**: they come from en
 | `GAUGE_DATASET_DIR` | `fix_label_class_names.py`, `perspective_correction.py` (YOLO dataset folder) |
 | `GAUGE_QUAD_INPUT_DIR`, `GAUGE_QUAD_OUTPUT_DIR` | `annotation/rectangle_to_four_points.py` |
 | `GAUGE_CV_INPUT_DIR`, `GAUGE_CV_OUTPUT_DIR` | the thresholding / edge experiments |
+| `GAUGE_AUG_INPUT_DIR`, `GAUGE_AUG_OUTPUT_DIR` | `augmentation/augment_images.py` |
 
 The scripts are otherwise the author's originals; the only change is that each path line now reads its value from the environment.
 
@@ -20,6 +21,7 @@ The scripts are otherwise the author's originals; the only change is that each p
 | | `create_train_val_split.py` | Copies a random 80/20 split of every video folder into `dataset/images|labels/train|val`. |
 | | `check_annotation_paths.py` | Checks that the annotation folders exist. |
 | | `check_pytorch_cuda.py` | Prints the PyTorch version and whether CUDA is available. |
+| `augmentation/` | `augment_images.py` | Makes one augmented copy of every frame with `albumentations`: rotation up to 20 degrees (p 0.5), horizontal flip (p 0.5), brightness / contrast (p 0.2) and Gaussian noise (p 0.2). It changes the images only, not the annotations. |
 | `annotation/` | `rectangle_to_four_points.py` | Turns the two-point rectangles of LabelMe into four corner points. |
 | `classical_cv/` | `perspective_correction.py` | Rectifies images with `cv2.getPerspectiveTransform`. |
 | | `white_balance.py` | LAB-based white balance function (the call is left in a comment). |

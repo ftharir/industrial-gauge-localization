@@ -11,9 +11,12 @@ The task is to mark the **pressure gauge** in every frame: one object per frame,
 | [`labelme_pass1_2024/`](labelme_pass1_2024) | First pass, used to train the detector | 29 Aug - 2 Sep 2024 | `meter` | 2 (opposite corners) |
 | [`labelme_pass2_2025/`](labelme_pass2_2025) | Second, independent pass over the same frames | 27-28 Mar 2025 | `Panel` | 2 (opposite corners) |
 | [`quad_4point_2025/`](quad_4point_2025) | Pass 2 rewritten with four corner points | 21 Apr 2025 | `Panel` | 4 |
+| [`labelme_augmented_2025/`](labelme_augmented_2025) | Boxes of the 435 augmented frames (copies of the original boxes, see below) | 2025 | `Panel` | 2 (opposite corners) |
 
 Every folder has one sub-folder per video (`video_07`, `video_08`, `video_09`, `video_10`) and one `.json` per frame with the same name as the frame, so `labelme_pass1_2024/video_09/9_frame (22).json` belongs to `../data/images/video_09/9_frame (22).jpg`.
-435 files per pass: 30 + 75 + 260 + 70.
+435 files per folder: 30 + 75 + 260 + 70.
+
+**Augmented frames:** the images in `../data/augmented/images` were made with `src/augmentation/augment_images.py`, which changes only the images. Their annotation files repeat the boxes of the original frames, so they are exact for frames that were only brightened or given noise and approximate for mirrored or rotated ones.
 
 ## Opening them in LabelMe
 

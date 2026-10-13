@@ -117,6 +117,7 @@ The steps are described in [`docs/pipeline.md`](docs/pipeline.md); the model and
 .
 ├── src/                              # the author's code, by pipeline stage
 │   ├── data_preparation/             # frame extraction, json -> YOLO, train/val split, label fix
+│   ├── augmentation/                 # image augmentation (albumentations)
 │   ├── annotation/                   # rectangle -> four corner points
 │   ├── classical_cv/                 # thresholding, Canny, Sobel, perspective, white balance
 │   └── README.md

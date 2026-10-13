@@ -10,7 +10,8 @@ frames (435 used here)
 LabelMe json
    |  json_to_yolo.py, fix_label_class_names.py      YOLO text labels, class 0 = gauge
    v
-YOLO labels  --->  create_train_val_split.py (random 80/20 per video)
+YOLO labels  (+ augmented copies: src/augmentation/augment_images.py)
+   --->  create_train_val_split.py (random 80/20 per video)
    |  notebook cells 26-28  (YOLOv5s, 100 epochs, batch 16, 640 px)
    v
 best.pt  --->  results/yolo_training (curves, matrices, predictions), results/demo

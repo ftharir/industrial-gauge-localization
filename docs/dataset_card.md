@@ -27,7 +27,9 @@
 
 ## Augmented frames
 
-`data/augmented/images` holds one augmented version of each frame (81 are mirrored, 77 are unchanged and 277 carry another change such as brightness or a small geometric change). The augmented annotations (`annotations/labelme_augmented_2025`) repeat the boxes of the original frames, so they are exact for unchanged and brightness-changed frames and approximate for mirrored or geometrically changed ones.
+`data/augmented/images` holds one augmented copy of each frame, made with [`src/augmentation/augment_images.py`](../src/augmentation/augment_images.py) (albumentations): rotation up to 20 degrees (probability 0.5), horizontal flip (0.5), brightness / contrast change (0.2) and Gaussian noise (0.2), each applied at random. In the set, 81 frames are mirrored, 77 are unchanged and 277 carry another change.
+
+The script changes the **images only**. The annotations of the augmented frames (`annotations/labelme_augmented_2025`) repeat the boxes of the original frames, so they are exact for frames that were only brightened, darkened or given noise, and approximate for mirrored or rotated frames (the gauge is near the centre of the frame, so the boxes still overlap the gauge well).
 
 ## Known issues
 
